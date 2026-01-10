@@ -90,16 +90,25 @@ function closeTest() {
 }
 
 // Función para descargar recursos
-function downloadResource(resource) {
-    const messages = {
-        'guia-niveles': 'Para descargar la Guía de Niveles completa, contáctame por WhatsApp y te la envío gratuitamente.'
-    };
+// function downloadResource(resource) {
+//      if (resource === 'ingles-basico-1') {
+//        const link = document.createElement('a');
+//        link.href = 'archivos/ingles-basico-1.pdf';
+//         link.download = 'Ingles_Basico_1.pdf';
+//        document.body.appendChild(link);
+//         link.click();
+//        document.body.removeChild(link);
+//         return;
+//     }
+//     const messages = {
+//         'guia-niveles': 'Para descargar la Guía de Niveles completa, contáctame por WhatsApp y te la envío gratuitamente.'
+//     };
     
-    alert(messages[resource] || 'Recurso no disponible');
+//     alert(messages[resource] || 'Recurso no disponible');
     
-    const whatsappUrl = `https://wa.me/5493413404334?text=Hola%20Macarena,%20me%20interesa%20descargar%20la%20${resource.replace('-', '%20')}`;
-    window.open(whatsappUrl, '_blank');
-}
+//     const whatsappUrl = `https://wa.me/5493413404334?text=Hola%20Macarena,%20me%20interesa%20descargar%20la%20${resource.replace('-', '%20')}`;
+//     window.open(whatsappUrl, '_blank');
+// }
 
 // Cerrar modales al hacer clic fuera
 window.addEventListener('click', function(event) {
